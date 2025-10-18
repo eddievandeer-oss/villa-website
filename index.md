@@ -5,6 +5,7 @@ layout: page
 <div class="villa-hero">
   <div class="hero-content">
     <h1 class="hero-title">Canada Ontario Niagara Grimsby</h1>
+    <p class="hero-subtitle">Each year, The Casablanca Hotel hosts thousands of guests exploring the Niagara area. From wine tours to beautiful wedding experiences - we pride ourselves on being a comfortable home-base for incredible journeys throughout Southern Ontario.</p>
   </div>
 </div>
 
@@ -74,6 +75,13 @@ layout: page
   </div>
 </footer>
 
+<!-- Floating Book Room Button -->
+<div class="floating-book-btn">
+  <a href="/rooms" class="book-room-btn">
+    <span class="btn-text">Book a Room</span>
+  </a>
+</div>
+
 <style>
 .villa-hero {
   width: 100vw;
@@ -93,7 +101,12 @@ layout: page
 }
 
 .hero-content {
+  padding: 0 36px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   z-index: 2;
@@ -102,9 +115,19 @@ layout: page
 .hero-title {
   font-size: 3.5rem;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 30px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  max-width: 1200px;
 }
 
 /* Ensure no margins or padding on the page */
@@ -129,6 +152,26 @@ main {
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    padding: 0 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 36px;
+    line-height: 1.4;
   }
 }
 
@@ -303,8 +346,8 @@ main {
   
   /* Footer Styles */
   .villa-footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-    color: #ecf0f1;
+    background: var(--villa-bg-tertiary);
+    color: var(--villa-text-secondary);
     padding: 60px 0 20px;
   }
   
@@ -333,7 +376,7 @@ main {
   .footer-info p {
     margin: 8px 0;
     line-height: 1.6;
-    color: #bdc3c7;
+    color: var(--villa-text-muted);
     font-size: 0.95rem;
   }
   
@@ -343,14 +386,14 @@ main {
   }
   
   .footer-bottom {
-    border-top: 1px solid #34495e;
+    border-top: 1px solid var(--villa-border-color);
     padding-top: 20px;
     text-align: center;
   }
   
   .footer-bottom p {
     margin: 0;
-    color: #95a5a6;
+    color: var(--villa-text-muted);
     font-size: 0.9rem;
   }
   
@@ -358,7 +401,6 @@ main {
   @media (max-width: 768px) {
     .villa-footer {
       padding: 40px 0 20px;
-      margin-top: 60px;
     }
     
     .footer-content {
@@ -373,6 +415,77 @@ main {
     
     .footer-info p {
       font-size: 0.9rem;
+    }
+  }
+
+  /* Floating Book Room Button */
+  .floating-book-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+  }
+
+  .book-room-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .book-room-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+  }
+
+  .book-room-btn:active {
+    transform: translateY(-1px);
+  }
+
+  .btn-text {
+    white-space: nowrap;
+  }
+
+  /* Responsive Design for Floating Button */
+  @media (max-width: 768px) {
+    .floating-book-btn {
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .book-room-btn {
+      padding: 12px 20px;
+      font-size: 0.9rem;
+    }
+
+    .btn-icon {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .floating-book-btn {
+      bottom: 15px;
+      right: 15px;
+    }
+
+    .book-room-btn {
+      padding: 10px 16px;
+      font-size: 0.85rem;
+      gap: 8px;
+    }
+
+    .btn-icon {
+      font-size: 1.3rem;
     }
   }
 </style>

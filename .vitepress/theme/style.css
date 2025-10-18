@@ -140,4 +140,29 @@
 
 /* Villa Website Custom Styles */
 
+/* Theme Variables */
+:root {
+  /* Light theme colors */
+  --villa-bg-primary: #ffffff;
+  --villa-bg-secondary: #f8f9fa;
+  --villa-bg-tertiary: #e9ecef;
+  --villa-text-primary: #2c3e50;
+  --villa-text-secondary: #666666;
+  --villa-text-muted: #95a5a6;
+  --villa-border-color: #e9ecef;
+  --villa-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme colors */
+html.dark {
+  --villa-bg-primary: #1B1B1F;
+  --villa-bg-secondary: #2a2a2e;
+  --villa-bg-tertiary: #3a3a3e;
+  --villa-text-primary: #ffffff;
+  --villa-text-secondary: #b8b8b8;
+  --villa-text-muted: #888888;
+  --villa-border-color: #3a3a3e;
+  --villa-shadow: rgba(0, 0, 0, 0.3);
+}
+
 
