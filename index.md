@@ -4,8 +4,10 @@ layout: page
 
 <div class="villa-hero">
   <div class="hero-content">
-    <h1 class="hero-title">Canada Ontario Niagara Grimsby</h1>
-    <p class="hero-subtitle">Each year, The Casablanca Hotel hosts thousands of guests exploring the Niagara area. From wine tours to beautiful wedding experiences - we pride ourselves on being a comfortable home-base for incredible journeys throughout Southern Ontario.</p>
+    <h1 class="hero-title">En Gedi House</h1>
+    <p class="hero-subtitle">En Gedi is a hidden place for the soul — a space to listen, to rest, and to be restored by the gentle whisper of God.</p>
+    <p class="hero-subtitle">We invite you to pause, breathe, and draw near to the Source of Living Water.</p>
+    <p class="hero-subtitle hero-subtitle-tip">“The wilderness and the dry land shall be glad; the desert shall rejoice and blossom like the rose.” — Isaiah 35 : 1</p>
   </div>
 </div>
 
@@ -13,16 +15,16 @@ layout: page
 <div class="villa-gallery">
   <div class="gallery-container">
     <div class="gallery-header">
-      <h2 class="gallery-title">Luxury Villa Showcase</h2>
-      <p class="gallery-subtitle">Experience the elegance and comfort of our premium villa</p>
+      <h2 class="gallery-title">Retreat · Prayer · Fellowship · Restoration</h2>
+      <p class="gallery-subtitle">Find peace. Be still. Encounter the Living God.</p>
     </div>
     <div class="gallery-grid">
       <div class="gallery-item large">
         <div class="image-container gallery-image-1">
           <div class="image-overlay">
             <div class="overlay-content">
-              <h3>Elegant Interior</h3>
-              <p>Luxurious living spaces designed for comfort and style</p>
+              <h3>A Spring in the Wilderness</h3>
+              <p>A place of quiet waters, where weary souls are restored in God’s presence.</p>
             </div>
           </div>
         </div>
@@ -42,38 +44,7 @@ layout: page
 </div>
 
 <!-- Footer Section -->
-<footer class="villa-footer">
-  <div class="footer-container">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>FIND US</h3>
-        <div class="footer-info">
-          <p>123 Niagara Vineyard Lane</p>
-          <p>Grimsby, Ontario L3M 4E8</p>
-          <p>Canada</p>
-        </div>
-      </div>
-      <div class="footer-section">
-        <h3>CONTACT US</h3>
-        <div class="footer-info">
-          <p>Phone: +1 (905) 555-0123</p>
-          <p>Email: info@casablancavilla.com</p>
-          <p>WhatsApp: +1 (905) 555-0124</p>
-        </div>
-      </div>
-      <div class="footer-section">
-        <h3>VILLA CASABLANCA</h3>
-        <div class="footer-info">
-          <p>Luxury accommodation in the heart of Niagara wine country</p>
-          <p>Experience elegance and tranquility</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 The Casablanca Villa. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
+<Footer />
 
 <!-- Floating Book Room Button -->
 <div class="floating-book-btn">
@@ -128,6 +99,15 @@ layout: page
   letter-spacing: 0.5px;
   line-height: 1.5;
   max-width: 1200px;
+}
+
+.hero-subtitle-tip {
+  color: #ccc;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.85;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Ensure no margins or padding on the page */
@@ -352,80 +332,6 @@ main {
   }
 }
   
-  /* Footer Styles */
-  .villa-footer {
-    background: var(--villa-bg-tertiary);
-    color: var(--villa-text-secondary);
-    padding: 60px 0 20px;
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-    margin-bottom: 40px;
-  }
-  
-  .footer-section h3 {
-    color: #f39c12;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .footer-info p {
-    margin: 8px 0;
-    line-height: 1.6;
-    color: var(--villa-text-muted);
-    font-size: 0.95rem;
-  }
-  
-  .footer-info p:hover {
-    color: #f39c12;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-bottom {
-    border-top: 1px solid var(--villa-border-color);
-    padding-top: 20px;
-    text-align: center;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-    color: var(--villa-text-muted);
-    font-size: 0.9rem;
-  }
-  
-  /* Footer Responsive Design */
-  @media (max-width: 768px) {
-    .villa-footer {
-      padding: 40px 0 20px;
-    }
-    
-    .footer-content {
-      grid-template-columns: 1fr;
-      gap: 30px;
-      text-align: center;
-    }
-    
-    .footer-section h3 {
-      font-size: 1.1rem;
-    }
-    
-    .footer-info p {
-      font-size: 0.9rem;
-    }
-  }
-
   /* Floating Book Room Button */
   .floating-book-btn {
     position: fixed;
