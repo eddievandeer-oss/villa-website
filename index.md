@@ -18,7 +18,7 @@ layout: page
     </div>
     <div class="gallery-grid">
       <div class="gallery-item large">
-        <div class="image-container" style="background-image: url('./.vitepress/theme/assets/background2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="image-container gallery-image-1">
           <div class="image-overlay">
             <div class="overlay-content">
               <h3>Elegant Interior</h3>
@@ -28,7 +28,7 @@ layout: page
         </div>
       </div>
       <div class="gallery-item">
-        <div class="image-container" style="background-image: url('./.vitepress/theme/assets/background3.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="image-container gallery-image-2">
           <div class="image-overlay">
             <div class="overlay-content">
               <h3>Beautiful Exterior</h3>
@@ -268,6 +268,14 @@ main {
 
 .gallery-item:hover .image-overlay {
   transform: translateY(0);
+}
+
+.gallery-image-1 {
+  background-image: url('./.vitepress/theme/assets/background2.jpg');
+}
+
+.gallery-image-2 {
+  background-image: url('./.vitepress/theme/assets/background3.jpg');
 }
 
 .overlay-content h3 {

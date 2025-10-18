@@ -140,6 +140,12 @@
 
 /* Villa Website Custom Styles */
 
+.image-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Theme Variables */
 :root {
   /* Light theme colors */
